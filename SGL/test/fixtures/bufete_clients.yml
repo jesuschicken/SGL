@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  person_id: 1
+  bufete_id: 1
+  bufete_client_is_active: false
+
+two:
+  person_id: 1
+  bufete_id: 1
+  bufete_client_is_active: false

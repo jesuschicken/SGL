@@ -1,0 +1,29 @@
+<h1>Listing bufete_clients</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Person</th>
+      <th>Bufete</th>
+      <th>Bufete client is active</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @bufete_clients.each do |bufete_client| %>
+      <tr>
+        <td><%= bufete_client.person_id %></td>
+        <td><%= bufete_client.bufete_id %></td>
+        <td><%= bufete_client.bufete_client_is_active %></td>
+        <td><%= link_to 'Show', bufete_client %></td>
+        <td><%= link_to 'Edit', edit_bufete_client_path(bufete_client) %></td>
+        <td><%= link_to 'Destroy', bufete_client, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Bufete client', new_bufete_client_path %>

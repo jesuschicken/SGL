@@ -1,0 +1,27 @@
+<h1>Listing contenders</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Person</th>
+      <th>Legal affair</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @contenders.each do |contender| %>
+      <tr>
+        <td><%= contender.person_id %></td>
+        <td><%= contender.legal_affair_id %></td>
+        <td><%= link_to 'Show', contender %></td>
+        <td><%= link_to 'Edit', edit_contender_path(contender) %></td>
+        <td><%= link_to 'Destroy', contender, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Contender', new_contender_path %>

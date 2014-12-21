@@ -1,0 +1,29 @@
+<h1>Listing bufete_lawyers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Bufete</th>
+      <th>Lawyer</th>
+      <th>Bufete lawyer is active</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @bufete_lawyers.each do |bufete_lawyer| %>
+      <tr>
+        <td><%= bufete_lawyer.bufete_id %></td>
+        <td><%= bufete_lawyer.lawyer_id %></td>
+        <td><%= bufete_lawyer.bufete_lawyer_is_active %></td>
+        <td><%= link_to 'Show', bufete_lawyer %></td>
+        <td><%= link_to 'Edit', edit_bufete_lawyer_path(bufete_lawyer) %></td>
+        <td><%= link_to 'Destroy', bufete_lawyer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Bufete lawyer', new_bufete_lawyer_path %>

@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Bufete client:</strong>
+  <%= @bufete_client_legal_affair.bufete_client_id %>
+</p>
+
+<p>
+  <strong>Legal affair:</strong>
+  <%= @bufete_client_legal_affair.legal_affair_id %>
+</p>
+
+<%= link_to 'Edit', edit_bufete_client_legal_affair_path(@bufete_client_legal_affair) %> |
+<%= link_to 'Back', bufete_client_legal_affairs_path %>

@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Person:</strong>
+  <%= @bufete_client.person_id %>
+</p>
+
+<p>
+  <strong>Bufete:</strong>
+  <%= @bufete_client.bufete_id %>
+</p>
+
+<p>
+  <strong>Bufete client is active:</strong>
+  <%= @bufete_client.bufete_client_is_active %>
+</p>
+
+<%= link_to 'Edit', edit_bufete_client_path(@bufete_client) %> |
+<%= link_to 'Back', bufete_clients_path %>

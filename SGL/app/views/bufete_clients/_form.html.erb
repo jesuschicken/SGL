@@ -1,0 +1,29 @@
+<%= form_for(@bufete_client) do |f| %>
+  <% if @bufete_client.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@bufete_client.errors.count, "error") %> prohibited this bufete_client from being saved:</h2>
+
+      <ul>
+      <% @bufete_client.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :person_id %><br>
+    <%= f.number_field :person_id %>
+  </div>
+  <div class="field">
+    <%= f.label :bufete_id %><br>
+    <%= f.number_field :bufete_id %>
+  </div>
+  <div class="field">
+    <%= f.label :bufete_client_is_active %><br>
+    <%= f.check_box :bufete_client_is_active %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

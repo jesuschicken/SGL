@@ -1,0 +1,69 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Person rut:</strong>
+  <%= @person.person_rut %>
+</p>
+
+<p>
+  <strong>Person names:</strong>
+  <%= @person.person_names %>
+</p>
+
+<p>
+  <strong>Person paternal surename:</strong>
+  <%= @person.person_paternal_surename %>
+</p>
+
+<p>
+  <strong>Person maternal surename:</strong>
+  <%= @person.person_maternal_surename %>
+</p>
+
+<p>
+  <strong>Person birth date:</strong>
+  <%= @person.person_birth_date %>
+</p>
+
+<p>
+  <strong>Gender:</strong>
+  <%= @person.gender_id %>
+</p>
+
+<p>
+  <strong>Marital status:</strong>
+  <%= @person.marital_status_id %>
+</p>
+
+<p>
+  <strong>Person address street:</strong>
+  <%= @person.person_address_street %>
+</p>
+
+<p>
+  <strong>Person address number:</strong>
+  <%= @person.person_address_number %>
+</p>
+
+<p>
+  <strong>Person address apartment:</strong>
+  <%= @person.person_address_apartment %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @person.city_id %>
+</p>
+
+<p>
+  <strong>Person phone:</strong>
+  <%= @person.person_phone %>
+</p>
+
+<p>
+  <strong>Person cellphone:</strong>
+  <%= @person.person_cellphone %>
+</p>
+
+<%= link_to 'Edit', edit_person_path(@person) %> |
+<%= link_to 'Back', people_path %>

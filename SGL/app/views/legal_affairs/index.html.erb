@@ -1,0 +1,37 @@
+<h1>Listing legal_affairs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Bufete</th>
+      <th>Status</th>
+      <th>Sub type</th>
+      <th>Legal affair name</th>
+      <th>Legal affair description</th>
+      <th>Legal affair begin date</th>
+      <th>Legal affair end date</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @legal_affairs.each do |legal_affair| %>
+      <tr>
+        <td><%= legal_affair.bufete_id %></td>
+        <td><%= legal_affair.status_id %></td>
+        <td><%= legal_affair.sub_type_id %></td>
+        <td><%= legal_affair.legal_affair_name %></td>
+        <td><%= legal_affair.legal_affair_description %></td>
+        <td><%= legal_affair.legal_affair_begin_date %></td>
+        <td><%= legal_affair.legal_affair_end_date %></td>
+        <td><%= link_to 'Show', legal_affair %></td>
+        <td><%= link_to 'Edit', edit_legal_affair_path(legal_affair) %></td>
+        <td><%= link_to 'Destroy', legal_affair, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Legal affair', new_legal_affair_path %>

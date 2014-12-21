@@ -1,0 +1,45 @@
+<%= form_for(@legal_affair) do |f| %>
+  <% if @legal_affair.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@legal_affair.errors.count, "error") %> prohibited this legal_affair from being saved:</h2>
+
+      <ul>
+      <% @legal_affair.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :bufete_id %><br>
+    <%= f.number_field :bufete_id %>
+  </div>
+  <div class="field">
+    <%= f.label :status_id %><br>
+    <%= f.number_field :status_id %>
+  </div>
+  <div class="field">
+    <%= f.label :sub_type_id %><br>
+    <%= f.number_field :sub_type_id %>
+  </div>
+  <div class="field">
+    <%= f.label :legal_affair_name %><br>
+    <%= f.text_field :legal_affair_name %>
+  </div>
+  <div class="field">
+    <%= f.label :legal_affair_description %><br>
+    <%= f.text_area :legal_affair_description %>
+  </div>
+  <div class="field">
+    <%= f.label :legal_affair_begin_date %><br>
+    <%= f.date_select :legal_affair_begin_date %>
+  </div>
+  <div class="field">
+    <%= f.label :legal_affair_end_date %><br>
+    <%= f.date_select :legal_affair_end_date %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

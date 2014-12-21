@@ -1,0 +1,61 @@
+<%= form_for(@bufete) do |f| %>
+  <% if @bufete.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@bufete.errors.count, "error") %> prohibited this bufete from being saved:</h2>
+
+      <ul>
+      <% @bufete.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :bufete_rut %><br>
+    <%= f.text_field :bufete_rut %>
+  </div>
+  <div class="field">
+    <%= f.label :bufete_name %><br>
+    <%= f.text_field :bufete_name %>
+  </div>
+  <div class="field">
+    <%= f.label :bufete_address_street %><br>
+    <%= f.text_field :bufete_address_street %>
+  </div>
+  <div class="field">
+    <%= f.label :bufete_address_number %><br>
+    <%= f.number_field :bufete_address_number %>
+  </div>
+  <div class="field">
+    <%= f.label :bufete_address_floor %><br>
+    <%= f.number_field :bufete_address_floor %>
+  </div>
+  <div class="field">
+    <%= f.label :bufete_office_number %><br>
+    <%= f.text_field :bufete_office_number %>
+  </div>
+  <div class="field">
+    <%= f.label :city_id %><br>
+    <%= f.number_field :city_id %>
+  </div>
+  <div class="field">
+    <%= f.label :bufete_first_phone %><br>
+    <%= f.text_field :bufete_first_phone %>
+  </div>
+  <div class="field">
+    <%= f.label :bufete_second_phone %><br>
+    <%= f.text_field :bufete_second_phone %>
+  </div>
+  <div class="field">
+    <%= f.label :bufete_email %><br>
+    <%= f.text_field :bufete_email %>
+  </div>
+  <div class="field">
+    <%= f.label :bufete_active %><br>
+    <%= f.check_box :bufete_active %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

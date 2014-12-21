@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Legal affair:</strong>
+  <%= @attachment.legal_affair_id %>
+</p>
+
+<p>
+  <strong>Person:</strong>
+  <%= @attachment.person_id %>
+</p>
+
+<p>
+  <strong>Integer:</strong>
+  <%= @attachment.integer %>
+</p>
+
+<p>
+  <strong>Attachment route:</strong>
+  <%= @attachment.attachment_route %>
+</p>
+
+<p>
+  <strong>Attachment name:</strong>
+  <%= @attachment.attachment_name %>
+</p>
+
+<p>
+  <strong>Attachment description:</strong>
+  <%= @attachment.attachment_description %>
+</p>
+
+<%= link_to 'Edit', edit_attachment_path(@attachment) %> |
+<%= link_to 'Back', attachments_path %>

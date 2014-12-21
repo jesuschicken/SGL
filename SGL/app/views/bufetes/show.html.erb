@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Bufete rut:</strong>
+  <%= @bufete.bufete_rut %>
+</p>
+
+<p>
+  <strong>Bufete name:</strong>
+  <%= @bufete.bufete_name %>
+</p>
+
+<p>
+  <strong>Bufete address street:</strong>
+  <%= @bufete.bufete_address_street %>
+</p>
+
+<p>
+  <strong>Bufete address number:</strong>
+  <%= @bufete.bufete_address_number %>
+</p>
+
+<p>
+  <strong>Bufete address floor:</strong>
+  <%= @bufete.bufete_address_floor %>
+</p>
+
+<p>
+  <strong>Bufete office number:</strong>
+  <%= @bufete.bufete_office_number %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @bufete.city_id %>
+</p>
+
+<p>
+  <strong>Bufete first phone:</strong>
+  <%= @bufete.bufete_first_phone %>
+</p>
+
+<p>
+  <strong>Bufete second phone:</strong>
+  <%= @bufete.bufete_second_phone %>
+</p>
+
+<p>
+  <strong>Bufete email:</strong>
+  <%= @bufete.bufete_email %>
+</p>
+
+<p>
+  <strong>Bufete active:</strong>
+  <%= @bufete.bufete_active %>
+</p>
+
+<%= link_to 'Edit', edit_bufete_path(@bufete) %> |
+<%= link_to 'Back', bufetes_path %>

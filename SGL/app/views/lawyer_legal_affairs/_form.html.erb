@@ -1,0 +1,25 @@
+<%= form_for(@lawyer_legal_affair) do |f| %>
+  <% if @lawyer_legal_affair.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@lawyer_legal_affair.errors.count, "error") %> prohibited this lawyer_legal_affair from being saved:</h2>
+
+      <ul>
+      <% @lawyer_legal_affair.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :legal_affair_id %><br>
+    <%= f.number_field :legal_affair_id %>
+  </div>
+  <div class="field">
+    <%= f.label :lawyer_id %><br>
+    <%= f.number_field :lawyer_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

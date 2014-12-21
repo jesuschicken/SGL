@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Bufete:</strong>
+  <%= @bufete_lawyer.bufete_id %>
+</p>
+
+<p>
+  <strong>Lawyer:</strong>
+  <%= @bufete_lawyer.lawyer_id %>
+</p>
+
+<p>
+  <strong>Bufete lawyer is active:</strong>
+  <%= @bufete_lawyer.bufete_lawyer_is_active %>
+</p>
+
+<%= link_to 'Edit', edit_bufete_lawyer_path(@bufete_lawyer) %> |
+<%= link_to 'Back', bufete_lawyers_path %>

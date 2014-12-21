@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Person:</strong>
+  <%= @contender.person_id %>
+</p>
+
+<p>
+  <strong>Legal affair:</strong>
+  <%= @contender.legal_affair_id %>
+</p>
+
+<%= link_to 'Edit', edit_contender_path(@contender) %> |
+<%= link_to 'Back', contenders_path %>

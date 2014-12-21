@@ -1,0 +1,27 @@
+<h1>Listing bufete_client_legal_affairs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Bufete client</th>
+      <th>Legal affair</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @bufete_client_legal_affairs.each do |bufete_client_legal_affair| %>
+      <tr>
+        <td><%= bufete_client_legal_affair.bufete_client_id %></td>
+        <td><%= bufete_client_legal_affair.legal_affair_id %></td>
+        <td><%= link_to 'Show', bufete_client_legal_affair %></td>
+        <td><%= link_to 'Edit', edit_bufete_client_legal_affair_path(bufete_client_legal_affair) %></td>
+        <td><%= link_to 'Destroy', bufete_client_legal_affair, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Bufete client legal affair', new_bufete_client_legal_affair_path %>

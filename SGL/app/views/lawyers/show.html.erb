@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Person:</strong>
+  <%= @lawyer.person_id %>
+</p>
+
+<p>
+  <strong>Specialty:</strong>
+  <%= @lawyer.specialty_id %>
+</p>
+
+<p>
+  <strong>Resume:</strong>
+  <%= @lawyer.resume_id %>
+</p>
+
+<%= link_to 'Edit', edit_lawyer_path(@lawyer) %> |
+<%= link_to 'Back', lawyers_path %>

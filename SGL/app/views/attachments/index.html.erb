@@ -1,0 +1,35 @@
+<h1>Listing attachments</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Legal affair</th>
+      <th>Person</th>
+      <th>Integer</th>
+      <th>Attachment route</th>
+      <th>Attachment name</th>
+      <th>Attachment description</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @attachments.each do |attachment| %>
+      <tr>
+        <td><%= attachment.legal_affair_id %></td>
+        <td><%= attachment.person_id %></td>
+        <td><%= attachment.integer %></td>
+        <td><%= attachment.attachment_route %></td>
+        <td><%= attachment.attachment_name %></td>
+        <td><%= attachment.attachment_description %></td>
+        <td><%= link_to 'Show', attachment %></td>
+        <td><%= link_to 'Edit', edit_attachment_path(attachment) %></td>
+        <td><%= link_to 'Destroy', attachment, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Attachment', new_attachment_path %>

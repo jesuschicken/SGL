@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Legal affair:</strong>
+  <%= @milestone.legal_affair_id %>
+</p>
+
+<p>
+  <strong>Milestone status:</strong>
+  <%= @milestone.milestone_status_id %>
+</p>
+
+<p>
+  <strong>Milestone type:</strong>
+  <%= @milestone.milestone_type_id %>
+</p>
+
+<p>
+  <strong>Milestone date in:</strong>
+  <%= @milestone.milestone_date_in %>
+</p>
+
+<p>
+  <strong>Milestone date out:</strong>
+  <%= @milestone.milestone_date_out %>
+</p>
+
+<p>
+  <strong>Milestone log:</strong>
+  <%= @milestone.milestone_log %>
+</p>
+
+<%= link_to 'Edit', edit_milestone_path(@milestone) %> |
+<%= link_to 'Back', milestones_path %>

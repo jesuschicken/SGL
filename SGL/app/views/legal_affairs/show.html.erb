@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Bufete:</strong>
+  <%= @legal_affair.bufete_id %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @legal_affair.status_id %>
+</p>
+
+<p>
+  <strong>Sub type:</strong>
+  <%= @legal_affair.sub_type_id %>
+</p>
+
+<p>
+  <strong>Legal affair name:</strong>
+  <%= @legal_affair.legal_affair_name %>
+</p>
+
+<p>
+  <strong>Legal affair description:</strong>
+  <%= @legal_affair.legal_affair_description %>
+</p>
+
+<p>
+  <strong>Legal affair begin date:</strong>
+  <%= @legal_affair.legal_affair_begin_date %>
+</p>
+
+<p>
+  <strong>Legal affair end date:</strong>
+  <%= @legal_affair.legal_affair_end_date %>
+</p>
+
+<%= link_to 'Edit', edit_legal_affair_path(@legal_affair) %> |
+<%= link_to 'Back', legal_affairs_path %>

@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  legal_affair_id: 1
+  person_id: MyString
+  integer: MyString
+  attachment_route: MyString
+  attachment_name: MyString
+  attachment_description: MyText
+
+two:
+  legal_affair_id: 1
+  person_id: MyString
+  integer: MyString
+  attachment_route: MyString
+  attachment_name: MyString
+  attachment_description: MyText

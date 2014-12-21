@@ -1,0 +1,45 @@
+<h1>Listing bufetes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Bufete rut</th>
+      <th>Bufete name</th>
+      <th>Bufete address street</th>
+      <th>Bufete address number</th>
+      <th>Bufete address floor</th>
+      <th>Bufete office number</th>
+      <th>City</th>
+      <th>Bufete first phone</th>
+      <th>Bufete second phone</th>
+      <th>Bufete email</th>
+      <th>Bufete active</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @bufetes.each do |bufete| %>
+      <tr>
+        <td><%= bufete.bufete_rut %></td>
+        <td><%= bufete.bufete_name %></td>
+        <td><%= bufete.bufete_address_street %></td>
+        <td><%= bufete.bufete_address_number %></td>
+        <td><%= bufete.bufete_address_floor %></td>
+        <td><%= bufete.bufete_office_number %></td>
+        <td><%= bufete.city_id %></td>
+        <td><%= bufete.bufete_first_phone %></td>
+        <td><%= bufete.bufete_second_phone %></td>
+        <td><%= bufete.bufete_email %></td>
+        <td><%= bufete.bufete_active %></td>
+        <td><%= link_to 'Show', bufete %></td>
+        <td><%= link_to 'Edit', edit_bufete_path(bufete) %></td>
+        <td><%= link_to 'Destroy', bufete, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Bufete', new_bufete_path %>

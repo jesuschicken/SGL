@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Legal affair:</strong>
+  <%= @lawyer_legal_affair.legal_affair_id %>
+</p>
+
+<p>
+  <strong>Lawyer:</strong>
+  <%= @lawyer_legal_affair.lawyer_id %>
+</p>
+
+<%= link_to 'Edit', edit_lawyer_legal_affair_path(@lawyer_legal_affair) %> |
+<%= link_to 'Back', lawyer_legal_affairs_path %>

@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  bufete_rut: MyString
+  bufete_name: MyString
+  bufete_address_street: MyString
+  bufete_address_number: 1
+  bufete_address_floor: 1
+  bufete_office_number: MyString
+  city_id: 1
+  bufete_first_phone: MyString
+  bufete_second_phone: MyString
+  bufete_email: MyString
+  bufete_active: false
+
+two:
+  bufete_rut: MyString
+  bufete_name: MyString
+  bufete_address_street: MyString
+  bufete_address_number: 1
+  bufete_address_floor: 1
+  bufete_office_number: MyString
+  city_id: 1
+  bufete_first_phone: MyString
+  bufete_second_phone: MyString
+  bufete_email: MyString
+  bufete_active: false

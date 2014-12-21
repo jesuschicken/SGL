@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  bufete_id: 1
+  status_id: 1
+  sub_type_id: 1
+  legal_affair_name: MyString
+  legal_affair_description: MyText
+  legal_affair_begin_date: 2014-12-19
+  legal_affair_end_date: 2014-12-19
+
+two:
+  bufete_id: 1
+  status_id: 1
+  sub_type_id: 1
+  legal_affair_name: MyString
+  legal_affair_description: MyText
+  legal_affair_begin_date: 2014-12-19
+  legal_affair_end_date: 2014-12-19
